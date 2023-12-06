@@ -96,7 +96,7 @@ resource "null_resource" "ansible" {
       type     = "ssh"
       user     = "centos"
       password = "DevOps321"
-      host     = aws_instance.web.public_ip
+      host     = aws_instance.instance.public_ip
     }
 
     inline = [
